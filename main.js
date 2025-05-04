@@ -20,7 +20,7 @@ const crawler = new PlaywrightCrawler({
 
     async requestHandler({ page, request, enqueueLinks, log }) {
         log.info(`Scraping: ${request.url}`);
-        pagesScraped++;
+        pagesScraped++; 
 
         await page.waitForSelector('.s-card-container', { timeout: 30000 });
 
