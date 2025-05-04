@@ -9,7 +9,7 @@ Actor.main(async () => {
             maxPages = 2,
             useApifyProxy = false,
             debugMode = false
-        } = input || {};
+        } = userInput || {};
 
         log.info('Starting Amazon scraper with configuration:', {
             startUrls: startUrls.map(u => u.url),
