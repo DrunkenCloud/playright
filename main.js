@@ -5,7 +5,7 @@ await Actor.init();
 
 const startUrl = await Actor.getInput();
 const {
-    startUrls = [{ url: startUrl }],
+    startUrls = [{ url: startUrl.url }],
     maxPages = 2,
     useApifyProxy = false,
     debugMode = false
