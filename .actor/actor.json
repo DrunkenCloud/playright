@@ -1,0 +1,16 @@
+{
+    "actorSpecification": 1,
+    "name": "amazon-product-scraper",
+    "title": "Amazon Product Scraper",
+    "description": "Scrapes product listings from Amazon search results",
+    "version": "1.0",
+    "dockerfile": "./Dockerfile",
+    "input": "./input_schema.json",
+    "readme": "./README.md",
+    "categories": ["scraping", "e-commerce"],
+    "storages": {
+        "dataset": {
+            "numberOfItemsToKeep": 10
+        }
+    }
+}

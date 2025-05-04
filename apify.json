@@ -1,9 +1,0 @@
-{
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "build": {
-      "uses": "node:20"
-    },
-    "main": "main.js"
-}  
