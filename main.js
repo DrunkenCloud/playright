@@ -37,7 +37,7 @@ const crawler = new PlaywrightCrawler({
         log.info(`Scraping: ${request.url}`);
         pagesScraped++;
 
-        await page.waitForSelector('.s-card-container', { timeout: 3000 });
+        await page.waitForSelector('.s-card-container', { timeout: 30000 });
 
         if (debugMode) {
             await page.waitForTimeout(2000);
