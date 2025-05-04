@@ -3,24 +3,15 @@ import { PlaywrightCrawler, log } from 'crawlee';
 
 await Actor.init();
 
-const input = await Actor.getInput();
+const startUrl = await Actor.getInput();
 const {
-    startUrls = [{ url: 'https://www.amazon.com/s?i=software-intl-ship&srs=16225008011&rh=n%3A16225008011&s=popularity-rank&fs=true' }],
+    startUrls = [{ url: startUrl }],
     maxPages = 2,
     useApifyProxy = false,
     debugMode = false
 } = input || {};
 
-console.log('Starting Amazon scraper with configuration:', {
-    startUrls: startUrls.map(u => u.url),
-    maxPages,
-    useProxy: useApifyProxy,
-    debugMode,
-});
-
 const proxyConfiguration = await Actor.createProxyConfiguration({ useApifyProxy });
-
-
 let pagesScraped = 0;
 
 const crawler = new PlaywrightCrawler({
