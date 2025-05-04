@@ -1,0 +1,26 @@
+{
+  "name": "playright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrunkenCloud/playright.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DrunkenCloud/playright/issues"
+  },
+  "homepage": "https://github.com/DrunkenCloud/playright#readme",
+  "description": "",
+  "dependencies": {
+    "apify": "^3.4.0",
+    "crawlee": "^3.13.2",
+    "playwright": "^1.52.0"
+  }
+}

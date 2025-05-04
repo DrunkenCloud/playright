@@ -1,0 +1,9 @@
+{
+	"id": "T9gUlwjP82lv5pt",
+	"json": "{\"id\":\"T9gUlwjP82lv5pt\",\"url\":\"https://www.amazon.com/s?i=software-intl-ship&srs=16225008011&rh=n%3A16225008011&s=popularity-rank&fs=true\",\"loadedUrl\":\"https://www.amazon.com/s?i=software-intl-ship&srs=16225008011&rh=n%3A16225008011&s=popularity-rank&fs=true\",\"uniqueKey\":\"https://www.amazon.com/s?fs=true&i=software-intl-ship&rh=n%3A16225008011&s=popularity-rank&srs=16225008011\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2025-05-04T11:10:39.515Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.amazon.com/s?fs=true&i=software-intl-ship&rh=n%3A16225008011&s=popularity-rank&srs=16225008011",
+	"url": "https://www.amazon.com/s?i=software-intl-ship&srs=16225008011&rh=n%3A16225008011&s=popularity-rank&fs=true"
+}
