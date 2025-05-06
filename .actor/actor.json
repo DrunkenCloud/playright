@@ -1,16 +1,12 @@
 {
     "actorSpecification": 1,
-    "name": "amazon-product-scraper",
-    "title": "Amazon Product Scraper",
-    "description": "Scrapes product listings from Amazon search results",
-    "version": "1.0",
-    "dockerfile": "./Dockerfile",
+    "name": "my-actor",
+    "title": "Scrape single page in JavaScript",
+    "description": "Scrape data from single page with provided URL.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "js-start"
+    },
     "input": "./input_schema.json",
-    "readme": "./README.md",
-    "categories": ["scraping", "e-commerce"],
-    "storages": {
-        "dataset": {
-            "numberOfItemsToKeep": 10
-        }
-    }
+    "dockerfile": "./Dockerfile"
 }
