@@ -60,29 +60,6 @@ const crawler = new PlaywrightCrawler({
             } else {
                 log.warning('No products found on this page');
             }
-
-            if (pagesScraped < maxPages) {
-                try {
-                    await page.waitForSelector('.s-pagination-container', { timeout: 10000 });
-                    
-                    const nextButtonExists = await page.$$eval(
-                        'a.s-pagination-next', 
-                        (elements) => elements.length > 0 && !elements[0].classList.contains('s-pagination-disabled')
-                    );
-                    
-                    if (nextButtonExists) {
-                        const nextPageUrl = await page.$eval('a.s-pagination-next', el => el.href);
-                        log.info(`Enqueuing next page: ${nextPageUrl}`);
-                        await crawler.addRequests([{ url: nextPageUrl }]);
-                    } else {
-                        log.info('No more pages available');
-                    }
-                } catch (error) {
-                    log.error(`Error handling pagination: ${error.message}`);
-                }
-            } else {
-                log.info(`Reached maximum page limit (${maxPages}), stopping pagination`);
-            }
         } catch (error) {
             log.error(`Failed to process ${request.url}: ${error.message}`);
         }
