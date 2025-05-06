@@ -1,26 +1,20 @@
 {
-  "name": "playright",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.10.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DrunkenCloud/playright.git"
-  },
-  "bugs": {
-    "url": "https://github.com/DrunkenCloud/playright/issues"
-  },
-  "homepage": "https://github.com/DrunkenCloud/playright#readme",
-  "description": "",
-  "dependencies": {
-    "apify": "^3.4.0",
-    "crawlee": "^3.13.2",
-    "playwright": "^1.52.0"
-  }
+    "name": "js-scrape-single-page",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "This is an example of an Apify actor.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6",
+        "axios": "^1.5.0",
+        "cheerio": "^1.0.0-rc.12"
+    },
+    "scripts": {
+        "start": "node ./src/main.js",
+        "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+    },
+    "author": "It's not you it's me",
+    "license": "ISC"
 }
