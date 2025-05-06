@@ -1,11 +1,11 @@
 {
     "actorSpecification": 1,
-    "name": "my-actor",
-    "title": "Scrape single page in JavaScript",
-    "description": "Scrape data from single page with provided URL.",
+    "name": "project-playwright-crawler-javascript",
+    "title": "Project Playwright Crawler JavaScript",
+    "description": "Crawlee and Playwright project in JavaScript.",
     "version": "0.0",
     "meta": {
-        "templateId": "js-start"
+        "templateId": "js-crawlee-playwright-chrome"
     },
     "input": "./input_schema.json",
     "dockerfile": "./Dockerfile"
