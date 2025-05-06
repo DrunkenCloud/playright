@@ -6,15 +6,19 @@ await Actor.init();
 let pagesScraped = 0;
 const maxPages = 5;
 
+const proxyConfiguration = await Actor.createProxyConfiguration();
 
-const crawler = new PlaywrightCrawler({   
+const crawler = new PlaywrightCrawler({
+    proxyConfiguration,
     launchContext: {
         launchOptions: {
             headless: true,
+            args: [
+                '--disable-gpu', // Mitigates the "crashing GPU process" issue in Docker containers
+            ]
         },
     },
 
-    // Fixed typo: requst → request
     async requestHandler({ request, page, log }) {
         log.info(`Processing ${request.url}...`);
         pagesScraped++;
